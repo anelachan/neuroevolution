@@ -12,6 +12,9 @@ GANN.py will choose the integer vector with the best accuracy score.
 
 If actually facing the handwritten digit problem, a deep neural network is probably not needed and may lead to overfitting, but the combined use of these two algorithms can help for parameter tuning.
 
+## Major Dependencies
+
+NumPy and Scikit-learn
 
 ## Runtime Warning
 
