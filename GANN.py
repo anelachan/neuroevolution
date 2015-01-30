@@ -174,7 +174,7 @@ class GANN(object):
 		list_of_genotypes = [ self.get_genotype(indiv) for indiv in individuals ] 
 		fitness_tuples = zip(list_of_genotypes, fitness_scores)
 		return fitness_tuples 
-		# note: scores are NOT normalized bc they are just being sorted and sliced; no probability needed
+		# note: scores are NOT normalized bc they are just being sorted and sliced
 
 	# END FITNESS CALCULATING METHOD --------------------------------------------
 
@@ -198,10 +198,10 @@ class GANN(object):
 		crossover_points = [ int(el*self.options['population_size']) 
 			for el in self.options['crossover_points']]
 		new_genotype = (
-										genotype_1[:crossover_points[0]]
-										+ genotype_2[crossover_points[0]:crossover_points[1]]
-										+ genotype_1[crossover_points[1]:]
-									 )
+			genotype_1[:crossover_points[0]]
+			+ genotype_2[crossover_points[0]:crossover_points[1]]
+			+ genotype_1[crossover_points[1]:]
+		)
 		return new_genotype
 
 
@@ -273,11 +273,11 @@ class GANN(object):
 
 		# convert offspring to Individual objects
 		if self.options['encoding'] == 'binary':
-			offspring = [Individual(self.vector_from_bitstring(child),fitness_function)
-										for child in offspring]
+			offspring = [Individual(self.vector_from_bitstring(child),
+				fitness_function) for child in offspring]
 		else:
 			offspring = [Individual(child,fitness_function) 
-										for child in offspring]
+				for child in offspring]
 		return offspring
 
 
