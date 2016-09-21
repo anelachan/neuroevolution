@@ -26,7 +26,7 @@ default_options = {
 	'crossover_points'	: [.3,.6],
 	'mutation_rate'			: .05,
 	'fitness_function'	: None,
-	'num_generations'		: 3,
+	'num_generations'		: 5,
 	'swap_rate'					: 0.2,
 	'encoding'					: 'binary',
 	'step_size'					: 2 # for integer vector encoding only
