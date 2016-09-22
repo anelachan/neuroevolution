@@ -15,19 +15,13 @@ Keyword args include `learning_rate`, `num_epochs`, `momentum` and `lmbda` (l2 r
 
 The GeneticAlgorithm class implements the genetic algorithm, global search algorithm. Currently the genetic algorithm here is set to optimize neural network structure only. GANN.py will choose the integer vector with the best accuracy score.
 
-Options include
-- population size
-- crossover points
-- mutation rate
-- the fitness function to be used
-- number of generations to be used,
-- the "swap rate" (amount of population to be replaced each generation),
-- the type of encoding
-- the step size for mutation in an integer vector-based encoding. 
+Options include `encoding`, `population_size`, `crossover_points`, `mutation_rate`, 
+`fitness_function`, `swap_rate`, `num_generations`, `step_size`, `max_layers` 
+(max number of hidden layers) and `max_nodes` (max number of nodes per hidden layer).
 
 The combined use of these two algorithms can help for parameter tuning.
 
-### Example training and getting predictions.
+### Examples
 
 The homework.py file outputs predictions in a CSV. A training and test set are included for reference. These represent pixel data on handwritten digits, but the data has been altered via random projection so that it no longer actually represents pixel data.
 
