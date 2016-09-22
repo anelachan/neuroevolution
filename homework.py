@@ -5,9 +5,9 @@ from sklearn.cross_validation import train_test_split
 from neural_network import NeuralNetwork
 
 # Input/output files for training and prediction
-TRAINING_FILE = 'train.csv'
-TESTING_FILE = 'test-nolabel.csv'
-PREDICTION_FILE = 'prediction.csv'
+TRAINING_FILE = 'data/train.csv'
+TESTING_FILE = 'data/test-nolabel.csv'
+PREDICTION_FILE = 'data/prediction.csv'
 
 
 def preprocess_training_data(training_data):
