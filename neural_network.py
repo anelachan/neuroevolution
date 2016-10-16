@@ -8,9 +8,6 @@ architecture is 25:100:10.
 Neural network tunable using a number of hyperparameters including:
 number of epochs, learning rate, regularisation term (L2) and momentum.
 
-If run as main, this program will generate an output file 'prediction.csv'
-and print out accuracy scores.
-
 """
 
 import numpy as np
